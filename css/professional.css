@@ -972,14 +972,14 @@ html {
 }
 
 /* Better link styling inside content */
-.site-content a:not(.btn):not(.nav-link):not(.text-decoration-none):not(.dropdown-item) {
+.site-content a:not(.btn):not(.nav-link):not(.text-decoration-none):not(.dropdown-item):not(.product-hero-tag) {
   color: #0d1615;
   text-decoration-color: #d1d5db;
   text-underline-offset: 3px;
   transition: text-decoration-color 0.2s ease;
 }
 
-.site-content a:not(.btn):not(.nav-link):not(.text-decoration-none):not(.dropdown-item):hover {
+.site-content a:not(.btn):not(.nav-link):not(.text-decoration-none):not(.dropdown-item):not(.product-hero-tag):hover {
   text-decoration-color: #0d1615;
 }
 
@@ -2104,10 +2104,14 @@ html {
 
 .fibodo-footer__grid {
   display: grid;
-  grid-template-columns: minmax(200px, 240px) repeat(4, minmax(0, 1fr));
+  grid-template-columns: minmax(200px, 240px) repeat(2, minmax(110px, 1fr)) minmax(260px, 1.6fr);
   gap: clamp(1.5rem, 3vw, 2.5rem);
   padding: clamp(2.75rem, 5vw, 3.75rem) 0 clamp(2rem, 4vw, 2.75rem);
   align-items: start;
+}
+
+.fibodo-footer__col--legal .fibodo-footer__links a {
+  white-space: nowrap;
 }
 
 .fibodo-footer__brand {
@@ -2240,7 +2244,7 @@ html {
 
 @media (max-width: 991px) {
   .fibodo-footer__grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(260px, 1.6fr);
   }
 
   .fibodo-footer__brand {
@@ -2278,6 +2282,10 @@ html {
 
   .fibodo-footer__tagline {
     min-width: 0;
+  }
+
+  .fibodo-footer__col--legal {
+    grid-column: 1 / -1;
   }
 }
 
@@ -2974,6 +2982,25 @@ a:hover .product-route-card {
 .product-hero-tag {
   padding: 0.4rem 0.85rem;
   font-size: 0.8125rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.product-hero-tag:is(:hover, :focus-visible) {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(13, 22, 21, 0.2);
+  filter: brightness(1.04);
+}
+
+.product-hero-tag--enterprise:is(:hover, :focus-visible) {
+  color: #0d1615;
+}
+
+.product-hero-tag:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 3px;
 }
 
 /* ===== Module cards with product photography ===== */
