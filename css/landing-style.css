@@ -10785,16 +10785,16 @@ body:has(#search.open):before {
   color: #4b9ad6;
 }
 
-.blog-grid .blog-post.blog-style-01 {
+.blog .blog-post.blog-style-01 {
   margin-top: 10px;
 }
 
-.blog-grid .blog-post.blog-style-01 .blog-post-info .post-title {
+.blog .blog-post.blog-style-01 .blog-post-info .post-title {
   font-size: 22px;
   line-height: 32px;
 }
 
-.blog-grid.grid-wrapper {
+.blog.grid-wrapper {
   grid-gap: 40px 24px;
 }
 
