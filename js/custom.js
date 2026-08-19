@@ -890,9 +890,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Remove preloader once page has loaded
   window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
-    setTimeout(() => {
-      preloader.classList.add("fade-out");
-    }, 2300); // show for ~2 seconds
+    if (preloader) {
+      setTimeout(() => {
+        preloader.classList.add("fade-out");
+      }, 2300); // show for ~2 seconds
+    }
   });
 
 const element = document.getElementById("swap-word");
@@ -921,5 +923,7 @@ const element = document.getElementById("swap-word");
     }
   }
 
-  // start after delay
-  setTimeout(deleteEffect, 1200);
+  // start after delay when the animated hero word is present
+  if (element) {
+    setTimeout(deleteEffect, 1200);
+  }

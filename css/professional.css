@@ -3675,3 +3675,282 @@ a:hover .product-route-card {
   color: #0d1615;
 }
 
+/* ===== Partner promo page ===== */
+.promo-page {
+  --promo-panel: #172220;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  background: var(--fibodo-ink);
+  font-family: "DM Sans", sans-serif;
+}
+
+.promo-page .container {
+  width: min(calc(100% - 40px), 1180px);
+  margin-inline: auto;
+}
+
+.promo-page .promo-hero {
+  position: relative;
+  isolation: isolate;
+  padding: clamp(4rem, 8vw, 7rem) 0 clamp(6rem, 10vw, 9rem);
+}
+
+.promo-page .promo-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(13, 22, 21, 0.96) 0%, rgba(13, 22, 21, 0.78) 55%, rgba(13, 22, 21, 0.45) 100%),
+    url('../assets/Post-Workout.webp') center right / cover no-repeat;
+}
+
+.promo-page .hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 680px) 1fr;
+}
+
+.promo-page .promo-brand-row,
+.promo-page .hero-actions,
+.promo-page .store-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.promo-page .promo-brand-row { margin-bottom: 2rem; }
+
+.promo-page .promo-brand img {
+  display: block;
+  width: min(220px, 55vw);
+  height: auto;
+}
+
+.promo-page .partner-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--fibodo-signal-orange);
+  border-radius: var(--fibodo-radius-pill);
+  color: var(--fibodo-signal-orange);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo-page .partner-pill span {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.promo-page .promo-copy h1 {
+  max-width: 12ch;
+  margin: 0 0 1.5rem;
+  color: #fff;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.promo-page .promo-copy h1 em,
+.promo-page .promise-panel p {
+  color: var(--fibodo-acid-lime);
+  font-style: normal;
+}
+
+.promo-page .hero-text {
+  max-width: 58ch;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.125rem;
+}
+
+.promo-page .hero-actions { margin-top: 2rem; }
+
+.promo-page .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0.8rem 1.5rem;
+  border: 0;
+  border-radius: var(--fibodo-radius-md);
+  font-weight: 700;
+}
+
+.promo-page .btn-primary {
+  background: var(--fibodo-signal-orange);
+  color: #fff;
+}
+
+.promo-page .guarantee {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+}
+
+.promo-page .offer-section {
+  position: relative;
+  z-index: 2;
+  margin-top: -4.5rem;
+}
+
+.promo-page .offer-grid,
+.promo-page .app-grid,
+.promo-page .benefits-grid,
+.promo-page .promise-panel {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.promo-page .offer-grid {
+  grid-template-columns: repeat(2, minmax(0, 360px));
+  justify-content: center;
+}
+
+.promo-page .offer-card,
+.promo-page .app-panel,
+.promo-page .benefits-grid,
+.promo-page .promise-panel {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--fibodo-radius-lg);
+  background: var(--promo-panel);
+  box-shadow: var(--fibodo-shadow-md);
+}
+
+.promo-page .offer-card {
+  padding: 2rem;
+  text-align: center;
+}
+
+.promo-page .offer-card > span,
+.promo-page .offer-card > strong,
+.promo-page .offer-card > b,
+.promo-page .offer-card > small { display: block; }
+
+.promo-page .offer-card > strong {
+  margin: 0.5rem 0 1rem;
+  color: var(--fibodo-acid-lime);
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  line-height: 1;
+}
+
+.promo-page .offer-card > b { font-size: 2.5rem; }
+
+.promo-page .offer-card footer {
+  margin: 1.5rem -2rem -2rem;
+  padding: 1rem;
+  border-radius: 0 0 var(--fibodo-radius-lg) var(--fibodo-radius-lg);
+  background: var(--fibodo-acid-lime);
+  color: var(--fibodo-ink);
+  font-weight: 700;
+}
+
+.promo-page .monthly ul {
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.promo-page .monthly li::before {
+  content: "✓";
+  margin-right: 0.65rem;
+  color: var(--fibodo-acid-lime);
+}
+
+.promo-page .app-section,
+.promo-page .benefits-section,
+.promo-page .final-promise { padding-top: 1.5rem; }
+
+.promo-page .app-panel,
+.promo-page .promise-panel { padding: clamp(1.5rem, 4vw, 2.5rem); }
+
+.promo-page .panel-title {
+  color: var(--fibodo-signal-orange);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo-page .app-grid {
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.promo-page .app-block {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.promo-page .app-icon,
+.promo-page .phone-mock {
+  display: grid;
+  place-items: center;
+  min-height: 100px;
+  border: 2px solid var(--fibodo-acid-lime);
+  border-radius: var(--fibodo-radius-lg);
+  color: var(--fibodo-acid-lime);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.promo-page .orange-label,
+.promo-page .lime-label {
+  color: var(--fibodo-signal-orange);
+  font-weight: 700;
+}
+
+.promo-page .lime-label { color: var(--fibodo-acid-lime); }
+
+.promo-page .app-block h2,
+.promo-page .benefits-grid h3,
+.promo-page .promise-panel h2 { color: #fff; }
+
+.promo-page .app-block p,
+.promo-page .benefits-grid p { color: rgba(255, 255, 255, 0.75); }
+
+.promo-page .benefits-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  overflow: hidden;
+}
+
+.promo-page .benefits-grid article {
+  padding: 1.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.promo-page .benefits-grid article:last-child { border-right: 0; }
+
+.promo-page .promise-panel {
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.promo-page .shield {
+  color: var(--fibodo-acid-lime);
+  font-size: 2.5rem;
+}
+
+@media (max-width: 991px) {
+  .promo-page .hero-layout,
+  .promo-page .app-grid,
+  .promo-page .promise-panel { grid-template-columns: 1fr; }
+
+  .promo-page .benefits-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 575px) {
+  .promo-page .offer-grid,
+  .promo-page .benefits-grid,
+  .promo-page .app-block { grid-template-columns: 1fr; }
+}
