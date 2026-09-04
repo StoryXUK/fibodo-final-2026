@@ -3677,6 +3677,299 @@ a:hover .product-route-card {
   color: rgba(255, 255, 255, 0.9);
 }
 
+/* ===== Homepage refinement =====
+   A quieter, more spacious expression of the existing fibodo system. Product
+   colours remain attached to CORE and GALAXY; decorative colour is neutral. */
+.home-refined .site-content {
+  background: #fff;
+}
+
+.home-refined .about-section.space-ptb {
+  padding-top: clamp(4.5rem, 7vw, 7rem);
+  padding-bottom: clamp(4.5rem, 7vw, 7rem);
+}
+
+.home-refined .section-accent {
+  background: #f7f6f3;
+}
+
+.home-refined .about-section.bg-light {
+  background: #efefeb !important;
+}
+
+.home-refined .about-section .row.justify-content-center.mb-4 {
+  margin-bottom: 2.75rem !important;
+}
+
+.home-refined .about-section .title:not(.title-main) {
+  letter-spacing: -0.025em;
+}
+
+.home-refined .media-row {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .home-refined .media-row,
+  .home-refined .media-row--align-top {
+    gap: clamp(4rem, 7vw, 7rem);
+    align-items: center;
+  }
+
+  .home-refined .media-row__image,
+  .home-refined .media-row__text {
+    width: 50%;
+  }
+}
+
+.home-refined .fibodo-ui-proof img,
+.home-refined .conversion-block__image {
+  border-color: rgba(17, 17, 17, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 18px 45px rgba(13, 22, 21, 0.09);
+}
+
+.home-refined .fibodo-ui-proof__badge {
+  background: rgba(17, 24, 23, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.home-refined .fibodo-ui-proof__live {
+  background: #49645f;
+}
+
+.home-refined .fibodo-section-kicker,
+.home-refined .fibodo-section-kicker--aqua {
+  width: 44px;
+  height: 2px;
+  margin-bottom: 1.25rem;
+  background: rgba(17, 17, 17, 0.34);
+  border-radius: 0;
+}
+
+.home-refined .graphic-badge--lime {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  box-shadow: 0 12px 30px rgba(13, 22, 21, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.home-refined .hero-fullbleed__devices .graphic-badge {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0;
+}
+
+.home-refined .hero-fullbleed__devices .graphic-badge img {
+  width: 30px;
+  height: 30px;
+}
+
+.home-refined .media-row__device .graphic-badge {
+  width: 68px;
+  height: 68px;
+}
+
+.home-refined .media-row__device .graphic-badge img {
+  width: 32px;
+  height: 32px;
+}
+
+.home-refined .hero-fullbleed {
+  min-height: 600px;
+  padding-top: clamp(6rem, 10vw, 8rem);
+  padding-bottom: clamp(5rem, 8vw, 7rem);
+  background-position: center 42%;
+}
+
+.home-refined .hero-fullbleed__overlay {
+  background: linear-gradient(
+    100deg,
+    rgba(247, 246, 243, 0.97) 0%,
+    rgba(247, 246, 243, 0.91) 43%,
+    rgba(247, 246, 243, 0.4) 69%,
+    rgba(247, 246, 243, 0.08) 100%
+  );
+}
+
+.home-refined .hero-fullbleed__content {
+  max-width: 680px;
+}
+
+.home-refined .hero-fullbleed__content .title-main {
+  font-size: clamp(3rem, 6vw, 4.75rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+}
+
+.home-refined .hero-fullbleed__content .banner-description {
+  max-width: 56ch;
+}
+
+.home-refined .site-content .btn.fibodo-btn--arrow::after {
+  width: 24px;
+  height: 24px;
+  background: transparent url('../images/graphics/bold-arrow.png') center / 15px no-repeat;
+  filter: brightness(0) invert(1);
+}
+
+.home-refined .site-content .btn.fibodo-btn--arrow {
+  padding: 0.8rem 1rem 0.8rem 1.25rem;
+  border-radius: 9px;
+}
+
+.home-refined .hero-fullbleed__link-secondary {
+  text-decoration-color: rgba(17, 17, 17, 0.3);
+}
+
+.home-refined .fibodo-product-card {
+  border-color: rgba(17, 17, 17, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(13, 22, 21, 0.055);
+}
+
+.home-refined .fibodo-product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 38px rgba(13, 22, 21, 0.1);
+}
+
+.home-refined .fibodo-product-card__media {
+  height: 210px;
+}
+
+.home-refined .fibodo-product-card__body {
+  padding: 1.25rem 1.35rem 0;
+}
+
+.home-refined .fibodo-product-card__desc {
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+.home-refined .fibodo-product-card--explore .fibodo-product-card__cta {
+  width: calc(100% + 2.7rem);
+  margin: 1.25rem -1.35rem 0;
+  padding: 0.8rem 1.35rem;
+}
+
+/* CORE and GALAXY deliberately retain their established product colours. */
+.home-refined .fibodo-product-card--explore.fibodo-product-card--pulsar .fibodo-product-card__cta {
+  background: #75697c;
+}
+
+.home-refined .fibodo-product-card--pulsar .fibodo-product-card__product,
+.home-refined .fibodo-product-card--pulsar .fibodo-product-card__icon {
+  color: #75697c;
+}
+
+.home-refined .fibodo-product-card--pulsar:hover {
+  border-color: #75697c;
+}
+
+.home-refined .fibodo-product-card--explore.fibodo-product-card--enterprise .fibodo-product-card__cta {
+  background: #27312f;
+  color: #fff;
+}
+
+.home-refined .fibodo-product-card--enterprise .fibodo-product-card__icon {
+  color: #4d5a57;
+}
+
+.home-refined .fibodo-product-card--enterprise:hover {
+  border-color: #4d5a57;
+}
+
+.home-refined .fibodo-product-card--explore.fibodo-product-card--enterprise .fibodo-product-card__cta::after {
+  filter: brightness(0) invert(1);
+}
+
+.home-refined .title--with-underline::after {
+  left: 0;
+  bottom: -0.05rem;
+  width: 52px;
+  height: 2px;
+  background: rgba(17, 17, 17, 0.32);
+}
+
+.home-refined .fibodo-inline-form:focus-within {
+  border-color: rgba(17, 17, 17, 0.35);
+  box-shadow: 0 0 0 3px rgba(17, 17, 17, 0.08);
+}
+
+.home-refined .usp-section--dark {
+  background: #17211f !important;
+}
+
+.home-refined .usp-section--dark > .graphic-device--dots {
+  width: 190px;
+  height: 190px;
+  background-color: transparent;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.18) 1.25px, transparent 1.25px);
+  background-size: 15px 15px;
+  border-radius: 0;
+  opacity: 0.45;
+}
+
+.home-refined .usp-section--dark::before {
+  width: 44px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.home-refined .fibodo-usp-card {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(255, 255, 255, 0.11);
+  border-top-width: 1px;
+}
+
+.home-refined .fibodo-usp-card__label {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.home-refined .usp-section--dark .graphic-badge--lime {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: none;
+}
+
+.home-refined .usp-section--dark .graphic-badge img {
+  filter: brightness(0) invert(1);
+  opacity: 0.82;
+}
+
+.home-refined .fibodo-quote__device {
+  width: 44px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+}
+
+.home-refined .fibodo-quote::before,
+.home-refined .fibodo-quote p {
+  color: #ddd8d2;
+}
+
+@media (max-width: 767px) {
+  .home-refined .hero-fullbleed {
+    min-height: 560px;
+    background-position: 62% center;
+  }
+
+  .home-refined .hero-fullbleed__overlay {
+    background: linear-gradient(90deg, rgba(247, 246, 243, 0.96), rgba(247, 246, 243, 0.76));
+  }
+
+  .home-refined .hero-fullbleed__link-secondary {
+    margin-left: 0.75rem;
+  }
+
+  .home-refined .media-row__device {
+    right: 0.5rem;
+  }
+}
+
 /* ===== Education Partners — Partner Pack capture form ===== */
 .partner-pack-form {
   background: #fff;
